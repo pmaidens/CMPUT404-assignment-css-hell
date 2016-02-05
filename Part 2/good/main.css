@@ -1,0 +1,9 @@
+.wood {
+	background-image: url("stk_generic_rockstrata_a.png");
+	background-repeat: repeat;
+	background-size: 100px 40px;
+}
+
+.topSpacer {
+	height: 40px;
+}

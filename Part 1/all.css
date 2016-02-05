@@ -1,0 +1,56 @@
+@font-face {
+	font-family: WangHanZong;
+	src: local("Helvetica Neue Bold"),
+       local("HelveticaNeue-Bold"),
+       url("Wang han zong tablet inscriptions Font-Simplified Chinese.ttf");
+}
+
+body {
+	background-color: #F3ECE2;
+}
+
+.chinese {
+	font-family: WangHanZong;
+	-ms-writing-mode: tb-rl; 
+	-webkit-writing-mode: vertical-rl;
+	-moz-writing-mode: vertical-rl;
+	-ms-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+}
+
+.chinese p {
+	color: #150B1C;
+	vertical-align: text-top;
+}
+
+.chinese h1 {
+	font-size: 100%;
+	font-weight: bolder;
+	color: #150B1C;
+}
+
+.poem {
+	text-align: center;
+}
+
+.poem p {
+	font-family: 'Allura', cursive;
+	font-size: 1.5em;
+}
+
+.poem h1, .poem h2, .poem h3, .poem h4, .poem h5, .poem h6 {
+	font-weight: bolder;
+	font-family: 'Allura', cursive;
+	font-size: 2em;
+}
+
+.book p {
+	font-family: 'Allura', cursive;
+	font-size: 1em;
+}
+
+.book h1, .book h2, .book h3, .book h4, .book h5, .book h6 {
+	font-weight: bolder;
+	font-family: 'Allura', cursive;
+	font-size: 2em;
+}
