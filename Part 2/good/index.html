@@ -1,30 +1,80 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Peter Maidens</title>
 
-  <title>Peter Maidens</title>
-  <meta name="description" content="Peter Maidens Homepage">
-  <meta name="author" content="Peter Maidens">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="reset.css">
-
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-
 <body>
-	<div class="header">
-		<div class="wood topSpacer"></div>
-		<div class="title"></div>
-		<div class="nav"></div>
-	</div>
-	<div class="body">
-		<div class="sidebar"></div>
-	</div>
-	<div class="footer"></div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Peter Maidens</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Me <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">My Life</a></li>
+                            <li><a href="#">My Resum&#233</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Working for You</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="home">
+        <div class="home-background">
+            <div class="spacer">
+                <div class="content">
+                    <h1 class="title"><span>Hi there!</span> <span>I'm Peter Maidens!</span></h1>
+                    <div class="subtitle">But I'm guessing you already knew that.</div>
+                </div>
+            </div>
+            <div class="continue-arrow">
+                <a href="#">
+                    <span class="link">Learn something you didn't know!</span>
+                    <span class="down-arrow glyphicon glyphicon-arrow-down" aria-hidden="true" />
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- <div class="aboutMe">
+        <div class="personal"></div>
+        <div class="work"></div>
+    </div>
+    <div class="aboutWork">
+        <div class="content"></div>
+        <div class="sidebar"></div>
+    </div>
+    <div class="footer"></div>
+    <div class=""></div> -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
