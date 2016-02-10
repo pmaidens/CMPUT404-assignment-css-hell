@@ -154,3 +154,11 @@ section {
 .quick-facts .blurb h4 {
 	font-weight: bolder;
 }
+
+.family img {
+	width: 49.5%;
+}
+
+.resume img {
+	width: 20%;
+}
