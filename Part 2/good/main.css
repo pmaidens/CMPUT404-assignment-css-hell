@@ -15,7 +15,7 @@ section {
 .home {
 	height: 100%;
 	min-height: 100%;
-	margin: 0 0 10% 0;
+	margin: 0 0 5% 0;
 }
 
 .home .home-background {
@@ -31,6 +31,7 @@ section {
 	position: relative;
 	width: 100%;
 	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .home .home-background .spacer .content {
@@ -68,6 +69,7 @@ section {
 	color: #999;
 	top: auto;
 	text-align: center;
+	font-size: 1.5em;
 }
 
 .home .home-background .continue-arrow a {
@@ -84,4 +86,71 @@ section {
 }
 .home .home-background .continue-arrow a:hover span.link {
 	text-decoration: underline;
+}
+
+.panel-primary .panel-heading {
+	border-bottom: 1px solid #999999;
+}
+
+.panel-primary .panel-body {
+	background-color: #222222;
+	color: #888888;
+}
+
+.panel-title {
+	font-weight: bolder;
+	font-size: 2em;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.info .panel-body {
+	display: flex;
+}
+
+.photo-frame {
+	margin: 10px;
+	width: 15em;
+}
+
+.photo-frame img {
+	width: inherit;
+}
+
+.facts {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 3em;
+	white-space: nowrap;
+}
+
+.facts .fact h4 {
+	border-bottom: 1px solid #888888
+}
+
+.facts .fact a {
+	color:inherit;
+}
+
+.email {
+	unicode-bidi:bidi-override;
+	direction: rtl;
+}
+
+.quick-facts {
+	margin: 0 1em 3em;
+}
+
+.quick-facts .blurb {
+	background-color: #CCC;
+	padding: 0em 2em;
+	color: #222;
+	margin: 10px;
+	width: 100%;
+}
+
+.quick-facts .blurb h4 {
+	font-weight: bolder;
 }

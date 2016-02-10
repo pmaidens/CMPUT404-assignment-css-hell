@@ -37,10 +37,10 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Me <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#aboutMe">My Life</a></li>
-                            <li><a href="#">My Resum&#233</a></li>
+                            <li><a href="#resume">My Resum&#233</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Working for You</a></li>
+                    <li><a href="#myWork">Working for You</a></li>
                 </ul>
             </div>
         </div>
@@ -56,7 +56,7 @@
                 </div>
             </div>
             <div class="continue-arrow">
-                <a class="smoothScroll" href="#aboutMe">
+                <a href="#aboutMe">
                     <span class="link">Learn something you didn't know!</span>
                     <span class="down-arrow glyphicon glyphicon-arrow-down" aria-hidden="true" />
                 </a>
@@ -69,20 +69,97 @@
         <div id="myInfo" class="personal">
             <div class="info">
                 <h2>So you want to know more about me...</h2>
-                <div class="photo-frame">
-                    <img class="headshot" src="images/Peter Headshot.jpg" alt="Headshot of Peter" />
+                <div class="panel panel-primary quick-facts">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Quick Facts</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div class="photo-frame inline">
+                            <img class="headshot" src="images/Peter Headshot.jpg" alt="Headshot of Peter" />
+                        </div>
+                        <div class="inline">
+                            <ul class="facts">
+                                <li class="fact">
+                                    <h4 class="subject">Location</h4>
+                                    <a href="https://goo.gl/maps/4z5XPyna2JB2" target="_blank"><span class="content">Edmonton, Alberta, Canada</span></a>
+                                </li>
+                                <li class="fact">
+                                    <h4 class="subject">Occupation</h4>
+                                    <span class="content">
+                                        <a href="#familyLife">Father</a>,
+                                        <a href="#resume">Software Developer</a>,
+                                        <a href="#myWork">Entrepreneur</a>
+                                    </span>
+                                </li>
+                                <li class="fact">
+                                    <h4 class="subject">Best Way to Contact Me</h4>
+                                    <span class="content email">moc.<span style="display:none;">ima@scraperbot.com</span>snediamp@retep</span>
+                                </li>
+                                <!-- <li class="fact"><h4 class="subject">Social Media</h4><span class="content"><i class="icon icon-linked-in"></i></span> -->
+                            </ul>
+                        </div>
+                        <div class="inline blurb">
+                            <h4>Well,</h4>
+                            <div>
+                                I'm a <span id="age"></span> year old software
+                                developer by day, father and husband during the
+                                evenings, and entrepreneur by night. I keep
+                                myself pretty busy, but that is the way I like
+                                it. I am a highly motivated individual with a
+                                <i>"go-go-go"</i> attitude, and love building
+                                products that customers will love. I like being
+                                part of a high-performing team, and I love
+                                working with and getting to know other people.
+                                I'd love to hear from you! Feel free to send me
+                                an email or look me up on social media.
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
-            <div class="family">
+            <div id="familyLife" class="family">
                 <img src="images/Family.jpg" alt="The Maidens Family" />
             </div>
         </div>
-        <div id="myWork" class="work"></div>
+        <div id="resume" class="resume">
+            <div class=""></div>
+        </div>
     </section>
-    <section id="myWork" class="aboutWork">
-        <div class="content"></div>
-        <div class="sidebar"></div>
+    <section id="myWork" class="aboutWork wrapper">
+        <div class="content inline">
+            Are you developing a Web Application? You came to the right place! <br/>
+            I love the web!
+        </div>
+
+        <nav class="sidebar-wrapper pull-right inline">
+            <div class="sidebar-nav nav panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">TL; DR</h3>
+                </div>
+                <div class="panel-body list-group">
+                    <a href="#" class="list-group-item active" data-scroll>
+                        <h4 class="list-group-item-heading">I'm a great coder</h4>
+                        <p class="list-group-item-text">...</p>
+                    </a>
+                    <a href="#" class="list-group-item active" data-scroll>
+                        <h4 class="list-group-item-heading">I love working in teams</h4>
+                        <p class="list-group-item-text">...</p>
+                    </a>
+                    <a href="#" class="list-group-item active" data-scroll>
+                        <h4 class="list-group-item-heading">I understand business</h4>
+                        <p class="list-group-item-text">...</p>
+                    </a>
+                    <a href="#" class="list-group-item active" data-scroll>
+                        <h4 class="list-group-item-heading">I'm all about customers</h4>
+                        <p class="list-group-item-text">...</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
     </section>
+
+
     <section class="footer"></section>
     <div class=""></div>
 
@@ -115,6 +192,15 @@
                 location.hash = "#home";
             }
         })
+
+        var today = new Date();
+        var birthday = new Date(1993, 04, 06);
+        var age = today.getFullYear() - birthday.getFullYear();
+        var month = today.getMonth() - birthday.getMonth();
+        if (month < 0 || (m === 0 && today.getDate() < birthday.getDate())) {
+            age--;
+        }
+        $("#age").html(age);
     </script>
 </body>
 </html>
