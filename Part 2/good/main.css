@@ -121,8 +121,8 @@ section {
 
 .facts {
 	list-style-type: none;
-	padding: 0;
-	margin: 0 3em;
+	padding: 0 2em 0 0;
+	margin: 0em;
 	white-space: nowrap;
 }
 
@@ -143,12 +143,36 @@ section {
 	margin: 0 1em 3em;
 }
 
+.quick-facts .quick-facts-heading {
+	border-bottom: 1px solid #999999;
+	font-weight: bolder;
+	font-size: 2em;
+}
+.quick-facts .quick-facts-title {
+	font-weight: bolder;
+	font-size: 1.2em;
+	color: white;
+}
+
+.quick-facts .quick-facts-body {
+	background-color: #222222;
+	color: #888888;
+	padding: 10px 0;
+}
+
 .quick-facts .blurb {
 	background-color: #CCC;
-	padding: 0em 2em;
+	padding: 0em 2em 1em;
 	color: #222;
-	margin: 10px;
-	width: 100%;
+}
+
+.info .media {
+	margin-top: 0px;
+}
+
+.quick-facts {
+	background-color: #222;
+	padding: 0 20px 10px 20px;
 }
 
 .quick-facts .blurb h4 {
@@ -161,4 +185,35 @@ section {
 
 .resume img {
 	width: 20%;
+}
+
+.flex {
+	display: flex;
+}
+
+.sidebar-wrapper {
+	height: 100%;
+}
+
+.ualberta .classes {
+	background-color: #222;
+	color: white; 
+}
+
+.ualberta .classes .title {
+	font-weight: bolder;
+	font-size: 1.2em;
+	border-bottom: 1px solid #CCC; 
+}
+
+.ualberta .classes .row {
+	padding: .5em 0;
+}
+
+.ualberta .classes .body .row {
+    border-bottom: 1px solid #444;
+}
+
+.ualberta .classes .row .element {
+	
 }

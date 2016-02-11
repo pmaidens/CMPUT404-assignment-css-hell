@@ -67,18 +67,18 @@
 
     <section id="aboutMe" class="aboutMe">
         <div id="myInfo" class="personal">
-            <div class="info">
+            <div class="info container-fluid">
                 <h2>So you want to know more about me...</h2>
-                <div class="panel panel-primary quick-facts">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Quick Facts</h2>
+                <div class="row quick-facts">
+                    <div class="row quick-facts-heading">
+                        <h3 class="quick-facts-title col-md-12">Quick Facts</h2>
                     </div>
-                    <div class="panel-body">
-                        <div class="photo-frame inline">
-                            <img class="headshot" src="images/Peter Headshot.jpg" alt="Headshot of Peter" />
+                    <div class="row quick-facts-body">
+                        <div class="photo-frame col-md-2">
+                            <img class="headshot img-responsive" src="images/Peter Headshot.jpg" alt="Headshot of Peter" />
                         </div>
-                        <div class="inline">
-                            <ul class="facts">
+                        <div class="col-md-10 row flex">
+                            <ul class="col-md-4 facts">
                                 <li class="fact">
                                     <h4 class="subject">Location</h4>
                                     <a href="https://goo.gl/maps/4z5XPyna2JB2" target="_blank"><span class="content">Edmonton, Alberta, Canada</span></a>
@@ -93,26 +93,27 @@
                                 </li>
                                 <li class="fact">
                                     <h4 class="subject">Best Way to Contact Me</h4>
-                                    <span class="content email">moc.<span style="display:none;">ima@scraperbot.com</span>snediamp@retep</span>
+                                    <span class="content email">moc.<span style="display:none;" aria-hidden="true">ima@scraperbot.com</span>snediamp@retep</span>
                                 </li>
                                 <!-- <li class="fact"><h4 class="subject">Social Media</h4><span class="content"><i class="icon icon-linked-in"></i></span> -->
                             </ul>
-                        </div>
-                        <div class="inline blurb">
-                            <h4>Well,</h4>
-                            <div>
-                                I'm a <span id="age"></span> year old software
-                                developer by day, father and husband during the
-                                evenings, and entrepreneur by night. I keep
-                                myself pretty busy, but that is the way I like
-                                it. I am a highly motivated individual with a
-                                <i>"go-go-go"</i> attitude, and love building
-                                products that customers will love. I like being
-                                part of a high-performing team, and I love
-                                working with and getting to know other people.
-                                I'd love to hear from you! Feel free to send me
-                                an email or look me up on social media.
+                            <div class="col-md-8 blurb">
+                                <h4>Well,</h4>
+                                <div>
+                                    I'm a <span id="age"></span> year old software
+                                    developer by day, father and husband during the
+                                    evenings, and entrepreneur by night. I keep
+                                    myself pretty busy, but that is the way I like
+                                    it. I am a highly motivated individual with a
+                                    <i>"go-go-go"</i> attitude, and love building
+                                    products that customers will love. I like being
+                                    part of a high-performing team, and I love
+                                    working with and getting to know other people.
+                                    I'd love to hear from you! Feel free to send me
+                                    an email or look me up on social media.
+                                </div>
                             </div>
+                            <div class="clearfix"></div>
                         </div>
                     </div>
                 </div>
@@ -166,12 +167,28 @@
                         in teams.
                     </p>
                     <p>
-                        Here are some other things that I learned during my
-                        internship:
+                    	At Intuit, I worked on a team developing Quickbooks 
+                        Online using cutting edge technology. Through this 
+                        experience, I learned the ins and 
+                        outs of web application development. I contributed to 
+                        the <b>Single Page Application</b> frontend and developed 
+                        RESTful backend services. Scalability is always a 
+                        concern when developing applications for over 1 million
+                        users, and my work on <b>QBO</b> taught me how to 
+                        develop software in a scalable way.
                     </p>
-                    <ul class="lessons-learned">
-                        <li class="lesson"></li>
-                    </ul>
+                    <p>
+                        Intuit also taught me a lot about teamwork. Hundreds of
+                        developers work on <b>QBO</b>, and scrum teams were 
+                        often swarming around a single task. This meant that 
+                        good communication with people on your team, as well as 
+                        people across the globe was critical. I also learned how
+                        to communicate with different stake holders, such as 
+                        customers, project managers, directors, and others. 
+                        These lessons helped me grow as a person and become a 
+                        better software developer because it allows me to 
+                        increase the quality and efficiency of my work.
+                    </p>
                     <h4>Full-time Software Developer</h4>
                     <div>
                         Starting May 2<sup>nd</sup>, I will be returning to Intuit
@@ -197,10 +214,36 @@
                     topics for any business, such as team building and
                     innovation catalyzation.
                 </p>
-                <p>
-                    Some of my favorite classes were:
-                </p>
-                <ul class="lessons-learned">
+                <div class="container-fluid classes">
+                    <div class="row">
+                        <div class="col-md-12 title">Some of my favorite classes were:</div>
+                    </div>
+                    <div class="row">
+                        <div class="container-fluid body">
+                            <div class="row">
+                                <div class="element col-md-6">CMPUT 296 &amp 297: Honors Foundations of Computing 1 &amp 2</div>
+                                <div class="element col-md-6">SMO 402: Management Skills for Supervisors and Leaders</div>
+                            </div>
+                            <div class="row">
+                                <div class="element col-md-6">CMPUT 301: Introduction to Software Engineering</div>
+                                <div class="element col-md-6">SMO 404: Interpersonal Communication and Team Management</div>
+                            </div>
+                            <div class="row">
+                                <div class="element col-md-6">CMPUT 391: Database Management Systems</div>
+                                <div class="element col-md-6">SMO 407: Effective Team Management</div>
+                            </div>
+                            <div class="row">
+                                <div class="element col-md-6">CMPUT 429: Computer Systems and Architecture</div>
+                                <div class="element col-md-6">SMO 437: Managing Culture</div>
+                            </div>
+                            <div class="row">
+                                <div class="element col-md-6">CMPUT 481: Parallel and Distributed Systems</div>
+                                <div class="element col-md-6"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <ul class="lessons-learned">
                     <li class="lesson">CMPUT 296 &amp 297: Honors Foundations of Computing 1 &amp 2</li>
                     <li class="lesson">CMPUT 301: Introduction to Software Engineering</li>
                     <li class="lesson">CMPUT 391: Database Management Systems</li>
@@ -210,7 +253,7 @@
                     <li class="lesson">SMO 404: Interpersonal Communication and Team Management</li>
                     <li class="lesson">SMO 407: Effective Team Management</li>
                     <li class="lesson">SMO 437: Managing Culture</li>
-                </ul>
+                </ul> -->
             </div>
             <div class="resume-entry uc" id="uc">
                 <h3><img src="images/UCLogo.png" alt="United Cycle" /></h3>
