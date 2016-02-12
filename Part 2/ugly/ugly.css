@@ -1,0 +1,387 @@
+html {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	overflow-x: hidden;
+	height: 100%;
+	font-family: "Courier New", Courier, monospace;
+	cursor: wait;
+	background-image: URL(https://pixabay.com/static/uploads/photo/2015/11/04/15/46/stars-1022756_960_720.jpg);
+	color: #0F0
+}
+
+section {
+	margin: 0 5% 0 5%;
+
+}
+
+img {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 5000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 5000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 5000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+nav.navbar.navbar-inverse {
+	background-color: #0F0;
+}
+
+nav.navbar .navbar-brand {
+	color: #FF0;
+}
+
+nav.navbar.navbar-inverse .navbar-nav > li > a {
+	color: #FF0AFF;
+}
+
+.panel-primary .panel-heading,
+.list-group-item.active .list-group-item-heading {
+	color: #FF0;
+}
+
+.list-group-item.active .list-group-item-text {
+	color: #FF0AFF;
+}
+
+.panel-primary .panel-body,
+.panel-primary .panel-heading,
+.list-group-item.active {
+	background-color: #0F0;
+}
+
+.list-group-item .list-group-item-heading {
+	color:
+}
+
+.list-group-item.active:hover {
+	background-color: #FF0AFF;
+}
+
+.home {
+	height: 100%;
+	min-height: 100%;
+	margin: 0 0 5% 0;
+	background-color: #0F0;
+}
+
+.home .home-background {
+	position: relative;
+	top: 0;
+	left: 0;
+	background: url("images/kananaskis.jpg") center center no-repeat fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.home .home-background .spacer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 10, 255, 0.5);
+}
+
+.home .home-background .spacer .content {
+	position: relative;
+	top: 50%;
+	padding: 0 25px;
+	text-align: center;
+	color: #FF0AFF;
+	transform: translateY(-50%);
+}
+
+.home .home-background .spacer .content .title span,
+.home .home-background .spacer .content .subtitle span {
+	/*#FF0AFF-space: nowrap;*/
+}
+
+.home .home-background .spacer .content .subtitle a {
+	color: inherit;
+}
+
+.home .home-background .spacer .content .title {
+	font-size: 4em;
+	margin: 0;
+	-webkit-animation-name: spin;
+	-webkit-animation-duration: 5000ms;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-name: spin;
+	-moz-animation-duration: 5000ms;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+	-ms-animation-name: spin;
+	-ms-animation-duration: 5000ms;
+	-ms-animation-iteration-count: infinite;
+	-ms-animation-timing-function: linear;
+}
+
+.home .home-background .spacer .content .subtitle {
+	font-size: 1.5em;
+	color: #0F0
+}
+
+.home .home-background .continue-arrow {
+	position: absolute;
+	width: 100%;
+	bottom: 2%;
+	color: #FF0;
+	top: auto;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.home .home-background .continue-arrow a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.home .home-background .continue-arrow a .down-arrow {
+	margin-top: 0.2em;
+	font-size: 1.5em;
+}
+
+.home .home-background .continue-arrow span {
+	display: block;
+}
+.home .home-background .continue-arrow a:hover span.link {
+	text-decoration: underline;
+}
+
+.panel-primary .panel-heading {
+	border-bottom: 1px solid #FF0;
+}
+
+.panel-primary .panel-body {
+	background-color: #0F0;
+	color: #FF0;
+}
+
+.panel-title {
+	font-weight: bolder;
+	font-size: 2em;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.info .panel-body {
+	display: flex;
+}
+
+.photo-frame {
+	margin: 10px;
+	width: 15em;
+}
+
+.photo-frame img {
+	/*width: inherit;*/
+}
+
+.facts {
+	list-style-type: none;
+	padding: 0 2em 0 0;
+	margin: 0em;
+}
+
+.facts .fact h4 {
+	border-bottom: 1px solid #FF0;
+}
+
+.facts .fact a {
+	color:inherit;
+}
+
+.email {
+	unicode-bidi:bidi-override;
+	direction: rtl;
+}
+
+.quick-facts {
+	margin: 0 1em 3em;
+}
+
+.quick-facts .quick-facts-heading {
+	border-bottom: 1px solid #FF0;
+	font-weight: bolder;
+	font-size: 2em;
+}
+.quick-facts .quick-facts-title {
+	font-weight: bolder;
+	font-size: 1.2em;
+	color: #FF0AFF;
+}
+
+.quick-facts .quick-facts-body {
+	background-color: #0F0;
+	color: #FF0;
+	padding: 10px 0;
+}
+
+.quick-facts .blurb {
+	background-color: #0F0;
+	padding: 0em 2em 1em;
+	color: #0F0;
+	margin-right: 25px;
+}
+
+.info .media {
+	margin-top: 0px;
+}
+
+.quick-facts {
+	background-color: #0F0;
+	padding: 0 20px 10px 20px;
+}
+
+.quick-facts .blurb h4 {
+	font-weight: bolder;
+}
+
+.family img {
+	/*width: 49.5%;*/
+}
+
+.resume img {
+	width: 20%;
+}
+
+.flex {
+	display: flex;
+}
+
+.resume {
+	padding-left: 0px;
+}
+
+.sidebar-wrapper {
+	height: 100%;
+}
+
+.ualberta .classes {
+	background-color: #0F0;
+	color: #FF0AFF;
+}
+
+.ualberta .classes .title {
+	font-weight: bolder;
+	font-size: 1.2em;
+}
+
+.ualberta .classes .row {
+	padding: .5em 0;
+}
+
+.ualberta .classes .row {
+    border-bottom: 1px solid #444;
+}
+
+.ualberta .classes .body .row:last-child {
+    border-bottom: none;
+}
+
+.ualberta .classes .row .element {
+	color: #FF0;
+}
+
+.bolder {
+	font-weight: bolder;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+p {
+	padding: 0 15px;
+}
+
+.image-container {
+	padding: 0 0 1em;
+}
+
+.image-container img:first-child {
+	padding: 0 0.25em 0 0;
+}
+
+.image-container img:last-child {
+	padding: 0 0 0 0.25em;
+}
+
+.row img {
+	width: 100%;
+}
+
+.footer {
+	margin: 5em 0 0;
+	background-color: #0F0;
+	color: #FF0AFF;
+	padding: 0em 0;
+}
+
+.footer a {
+	color: inherit;
+	display: block;
+}
+
+.footer .container-fluid {
+	margin: 3em 0;
+}
+
+.footer .title {
+	color: #FF0
+}
+
+.footer .social {
+	font-size: 1.5em;
+	margin-bottom: 4em;
+}
+
+.footer .social .social-icon {
+	margin: 0 0.2em;
+}
+
+a.social-icon {
+	width: 1.3em;
+	height: 1.3em;
+	text-decoration: none;
+	background-color: #FF0AFF;
+	color: #0F0;
+	display: inline-block;
+	text-align: center;
+	font-size: 1.4em;
+	padding: 0.1em 0;
+	border-radius: 0.3em;
+}
+
+.facts .social-icon {
+	margin: 0 auto;
+}
+
+a.social-icon.social-icon-grey {
+	background-color: #FF0;
+	color: #0F0;
+}
